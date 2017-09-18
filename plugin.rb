@@ -9,25 +9,28 @@ module ::WatchCategory
   def self.watch_category!
     groups_cats = {
       # "group" => ["category", "another-top-level-category", ["parent-category", "sub-category"] ],
-      "coordinating-cmte" => [ ["closed-groups", "coordinating-committee"] ],
-      "digcol-cmte" => [ ["closed-groups", "digital-collections-committee"] ],
-      "digped-cmte" => [ ["closed-groups", "digital-pedagogy-committee"] ],
-      "digschol-cmte" => [ ["closed-groups", "digital-scholarship-committee"] ],
-      "eresources-cmte" => [ ["closed-groups", "e-resources-committee"], ["libraries", "buyers-group"] ],
-      "infolit-cmte" => [ ["closed-groups", "information-literacy-committee"] ],
-      "inst-research-cmte" => [ ["closed-groups", "institutional-research-assessment-committee"] ],
-      "oclc-cmte" => [ ["closed-groups", "oclc-programs-committee"] ],
-      "profdev-cmte" => [ ["closed-groups", "professional-development-committee"] ],
-      "lib-buyers" => [ ["libraries", "buyers-group"] ],
-      "chairs" => [ ["closed-groups", "chairs"] ]
+      "Circle1" => [ "circle1", ["circle1", "indonesia-support"] ],
+      "Circle2" => [ "circle2", ["circle2", "europe-support"] ],
+      "Circle3" => [ "circle3" ],
+      "Circle4" => [ "circle4", ["circle4", "brazil-support"] ],
+
+      "Brazil" => [ ["circle4", "brazil-support"] ],
+      "Europe" => [ ["circle2", "europe-support"] ],
+      "Indonesia" => [ ["circle41", "indonesia-support"] ]
+
       # "everyone" makes every user watch the listed categories
       # "everyone" => [ "announcements" ]
     }
     WatchCategory.change_notification_pref_for_group(groups_cats, :watching)
 
     groups_cats = {
-      "coordinating-cmte" => [ "announcements" ],
-      "representatives" => [ "announcements" ]
+      "CSD" => [ ["sales", "options"], ["sales", "tech"] ],
+      "Regional" => [ "sales", "marketing" ], ["sales", "options"], ["sales", "tech"] ],
+      "SalesAdmin" => [ "sales", "prices" ], ["sales", "options"], ["sales", "tech"] ],
+      "OSD" => [ "sales", "prices" ], ["sales", "marketing" ], ["sales", "options"], ["sales", "tech"] ],
+      "Management" => [ "sales", "prices" ], ["sales", "marketing" ], ["sales", "options"], ["sales", "tech"] ],
+      "Tech" => [ ["sales", "options"], ["sales", "tech"] ],
+      "everyone" => [ "test" ]
     }
     WatchCategory.change_notification_pref_for_group(groups_cats, :watching_first_post)
   end
