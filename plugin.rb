@@ -25,10 +25,10 @@ module ::WatchCategory
 
     groups_cats = {
       "CSD" => [ ["sales", "options"], ["sales", "tech"] ],
-      "Regional" => [ "sales", "marketing" ], ["sales", "options"], ["sales", "tech"] ],
-      "SalesAdmin" => [ "sales", "prices" ], ["sales", "options"], ["sales", "tech"] ],
-      "OSD" => [ "sales", "prices" ], ["sales", "marketing" ], ["sales", "options"], ["sales", "tech"] ],
-      "Management" => [ "sales", "prices" ], ["sales", "marketing" ], ["sales", "options"], ["sales", "tech"] ],
+      "Regional" => [ [ "sales", "marketing" ], ["sales", "options"], ["sales", "tech"] ],
+      "SalesAdmin" => [ [ "sales", "prices" ], ["sales", "options"], ["sales", "tech"] ],
+      "OSD" => [ [ "sales", "prices" ], ["sales", "marketing" ], ["sales", "options"], ["sales", "tech"] ],
+      "Management" => [ [ "sales", "prices" ], ["sales", "marketing" ], ["sales", "options"], ["sales", "tech"] ],
       "Tech" => [ ["sales", "options"], ["sales", "tech"] ],
       "everyone" => [ "test" ]
     }
