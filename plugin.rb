@@ -11,12 +11,14 @@ module ::WatchCategory
       # "group" => ["category", "another-top-level-category", ["parent-category", "sub-category"] ],
       "Circle1" => [ "circle1", ["circle1", "indonesia-support"] ],
       "Circle2" => [ "circle2", ["circle2", "europe-support"] ],
-      "Circle3" => [ "circle3" ],
-      "Circle4" => [ "circle4", ["circle4", "brazil-support"] ],
+      "Circle3" => [ "circle3", ["circle3", "india-support" ],
+      "Circle4" => [ "circle4", ["circle4", "brazil-support"], ["circle4", "usa-canada-support"] ],
 
       "Brazil" => [ ["circle4", "brazil-support"] ],
       "Europe" => [ ["circle2", "europe-support"] ],
-      "Indonesia" => [ ["circle41", "indonesia-support"] ]
+      "Indonesia" => [ ["circle1", "indonesia-support"] ],
+      "USA" => [ ["circle4", "usa-canada-support"] ],
+      "India" => [ ["circle3", "india-support"] ]
 
       # "everyone" makes every user watch the listed categories
       # "everyone" => [ "announcements" ]
