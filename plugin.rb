@@ -18,7 +18,11 @@ module ::WatchCategory
       "Europe" => [ ["circle2", "europe-support"] ],
       "Indonesia" => [ ["circle1", "indonesia-support"] ],
       "USA" => [ ["circle4", "usa-canada-support"] ],
-      "India" => [ ["circle3", "india-support"] ]
+      "India" => [ ["circle3", "india-support"] ],
+      
+      "BrazilSales" => [ ["sales", "brazil-sales"] ],
+      "EuropeSales" => [ ["sales", "europe-sales"] ],
+      "USASales" => [ ["sales", "usa-canada-sales"] ]
 
       # "everyone" makes every user watch the listed categories
       # "everyone" => [ "announcements" ]
