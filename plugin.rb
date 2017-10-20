@@ -12,7 +12,7 @@ module ::WatchCategory
       "Circle1" => [ "circle1", ["circle1", "indonesia-support"] ],
       "Circle2" => [ "circle2", ["circle2", "europe-support"] ],
       "Circle3" => [ "circle3", ["circle3", "india-support" ] ],
-      "Circle4" => [ "circle4", ["circle4", "brazil-support"], ["circle4", "usa-canada-support"] ],
+      "Circle4" => [ "circle4", ["circle4", "brazil-support"], ["circle4", "usa-canada-support"], ["circle4", "russia-support"] ],
 
       "Brazil" => [ ["circle4", "brazil-support"] ],
       "Europe" => [ ["circle2", "europe-support"] ],
