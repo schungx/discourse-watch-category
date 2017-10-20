@@ -20,6 +20,7 @@ module ::WatchCategory
       "USA" => [ ["circle4", "usa-canada-support"] ],
       "India" => [ ["circle3", "india-support"] ],
       "Turkey" => [ ["circle3", "turkey-support"] ],
+      "Russia" => [ ["circle4", "russia-support"] ],
       
       "BrazilSales" => [ ["sales", "brazil-sales"] ],
       "EuropeSales" => [ ["sales", "europe-sales"] ],
