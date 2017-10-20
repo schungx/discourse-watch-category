@@ -9,20 +9,20 @@ module ::WatchCategory
   def self.watch_category!
     groups_cats = {
       # "group" => ["category", "another-top-level-category", ["parent-category", "sub-category"] ],
-      "Circle1" => [ "circle1"
-                    , ["circle1", "indonesia-support"] ],
+      "Circle1" => [ "circle1",
+                    ["circle1", "indonesia-support"] ],
       
       "Circle2" => [ "circle2", ["circle2", "europe-support"] ],
       
-      "Circle3" => [ "circle3"
-                    , ["circle3", "india-support" ]
-                    , ["circle3", "egypt-support"]
-                    , ["circle3", "south-africa-support"] ],
+      "Circle3" => [ "circle3",
+                    ["circle3", "india-support" ],
+                    ["circle3", "egypt-support"],
+                    ["circle3", "south-africa-support"] ],
       
-      "Circle4" => [ "circle4"
-                    , ["circle4", "brazil-support"]
-                    , ["circle4", "usa-canada-support"]
-                    , ["circle4", "russia-support"] ],
+      "Circle4" => [ "circle4",
+                    ["circle4", "brazil-support"],
+                    ["circle4", "usa-canada-support"],
+                    ["circle4", "russia-support"] ],
 
       "Brazil" => [ ["circle4", "brazil-support"] ],
       "Europe" => [ ["circle2", "europe-support"] ],
