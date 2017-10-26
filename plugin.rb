@@ -22,7 +22,9 @@ module ::WatchCategory
       "Circle4" => [ "circle4",
                     ["circle4", "brazil-support"],
                     ["circle4", "usa-canada-support"],
-                    ["circle4", "russia-support"] ],
+                    ["circle4", "russia-support"],
+                    ["circle4", "australia-support"],
+                    ["circle4", "mexico-support"] ],
 
       "Brazil" => [ ["circle4", "brazil-support"] ],
       "Europe" => [ ["circle2", "europe-support"] ],
@@ -34,7 +36,9 @@ module ::WatchCategory
       "MiddleEast" => [ "circle3" ],
       "Africa" => [ "circle3" ],
       "Egypt" => [ ["circle3", "egypt-support"] ],
-      "SouthAfrica" => [ ["circle4", "south-africa-support"] ],
+      "SouthAfrica" => [ ["circle3", "south-africa-support"] ],
+      "Australia" => [ ["circle4", "autralia-support"] ],
+      "Mexico" => [ ["circle4", "mexico-support"] ],
       
       "BrazilSales" => [ ["sales", "brazil-sales"] ],
       "EuropeSales" => [ ["sales", "europe-sales"] ],
