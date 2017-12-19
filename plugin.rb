@@ -10,7 +10,10 @@ module ::WatchCategory
     groups_cats = {
       # "group" => ["category", "another-top-level-category", ["parent-category", "sub-category"] ],
       "Circle1" => [ "circle1",
-                    ["circle1", "indonesia-support"] ],
+                    ["circle1", "indonesia-support"],
+                    ["circle1", "thailand-support"],
+                    ["circle1", "malaysia-support"],
+                    ["circle1", "philippines-support"] ],
       
       "Circle2" => [ "circle2", ["circle2", "europe-support"] ],
       
@@ -28,7 +31,10 @@ module ::WatchCategory
 
       "Brazil" => [ ["circle4", "brazil-support"] ],
       "Europe" => [ ["circle2", "europe-support"] ],
+      "Malaysia" => [ ["circle1", "malaysia-support"] ],
+      "Thailand" => [ ["circle1", "thailand-support"] ],
       "Indonesia" => [ ["circle1", "indonesia-support"] ],
+      "Philippines" => [ ["circle1", "philippines-support"] ],
       "USA" => [ ["circle4", "usa-canada-support"] ],
       "India" => [ ["circle3", "india-support"] ],
       "Turkey" => [ ["circle3", "turkey-support"] ],
