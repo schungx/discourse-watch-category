@@ -61,8 +61,7 @@ module ::WatchCategory
       "SalesAdmin" => [ [ "sales", "prices" ], ["sales", "options"], ["sales", "tech"] ],
       "OSD" => [ [ "sales", "prices" ], ["sales", "marketing" ], ["sales", "options"], ["sales", "tech"] ],
       "Management" => [ [ "sales", "prices" ], ["sales", "marketing" ], ["sales", "options"], ["sales", "tech"] ],
-      "Tech" => [ ["sales", "options"], ["sales", "tech"] ],
-      "everyone" => [ "test" ]
+      "Tech" => [ ["sales", "options"], ["sales", "tech"] ]
     }
     WatchCategory.change_notification_pref_for_group(groups_cats, :watching_first_post)
   end
@@ -82,11 +81,13 @@ module ::WatchCategory
         unless category.nil? || group.nil?
           if group_name == "everyone"
             User.all.each do |user|
+              next if user.staged?
               watched_categories = CategoryUser.lookup(user, pref).pluck(:category_id)
               CategoryUser.set_notification_level_for_category(user, CategoryUser.notification_levels[pref], category.id) unless watched_categories.include?(category.id)
             end
           else
             group.users.each do |user|
+              next if user.staged?
               watched_categories = CategoryUser.lookup(user, pref).pluck(:category_id)
               CategoryUser.set_notification_level_for_category(user, CategoryUser.notification_levels[pref], category.id) unless watched_categories.include?(category.id)
             end
