@@ -82,12 +82,16 @@ module ::WatchCategory
           if group_name == "everyone"
             User.all.each do |user|
               next if user.staged?
+              next if SiteSetting.must_approve_users? && !user.approved?
+              
               watched_categories = CategoryUser.lookup(user, pref).pluck(:category_id)
               CategoryUser.set_notification_level_for_category(user, CategoryUser.notification_levels[pref], category.id) unless watched_categories.include?(category.id)
             end
           else
             group.users.each do |user|
               next if user.staged?
+              next if SiteSetting.must_approve_users? && !user.approved?
+              
               watched_categories = CategoryUser.lookup(user, pref).pluck(:category_id)
               CategoryUser.set_notification_level_for_category(user, CategoryUser.notification_levels[pref], category.id) unless watched_categories.include?(category.id)
             end
