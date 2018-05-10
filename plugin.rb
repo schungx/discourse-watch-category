@@ -27,7 +27,7 @@ module ::WatchCategory
                     ["circle4", "usa-canada-support"],
                     ["circle4", "russia-support"],
                     ["circle4", "australia-support"],
-                    ["circle4", "mexico-support"] ],
+                    ["circle4", "mexico-support"],
                     ["circle4", "argentina-support"] ],
 
       "Brazil" => [ ["circle4", "brazil-support"] ],
