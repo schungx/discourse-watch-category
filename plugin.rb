@@ -13,7 +13,8 @@ module ::WatchCategory
                     ["circle1", "indonesia-support"],
                     ["circle1", "thailand-support"],
                     ["circle1", "malaysia-support"],
-                    ["circle1", "philippines-support"] ],
+                    ["circle1", "philippines-support"],
+                    ["circle1", "vietnam-support"] ],
       
       "Circle2" => [ "circle2", ["circle2", "europe-support"] ],
       
@@ -36,6 +37,7 @@ module ::WatchCategory
       "Thailand" => [ ["circle1", "thailand-support"] ],
       "Indonesia" => [ ["circle1", "indonesia-support"] ],
       "Philippines" => [ ["circle1", "philippines-support"] ],
+      "Vietnam" => [ ["circle1", "vietnam-support"] ],
       "USA" => [ ["circle4", "usa-canada-support"] ],
       "India" => [ ["circle3", "india-support"] ],
       "Turkey" => [ ["circle3", "turkey-support"] ],
